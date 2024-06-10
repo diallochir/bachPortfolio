@@ -1,0 +1,186 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url('../img/bk.jpg');
+}
+
+.header {
+    background: url('/img/laptop-with-PSD-file.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.profile {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-photo {
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.profile-role {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about, .skills, .projects, .resume, .contact, .footer {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills li {
+    background: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.resume .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.resume .btn:hover {
+    background-color: #555;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #555;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .profile-name {
+        font-size: 2rem;
+    }
+
+    .profile-role {
+        font-size: 1rem;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+}

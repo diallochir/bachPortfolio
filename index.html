@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachir Portfolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  
+    <script src="/js/scripts.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="profile">
+                <img src="/img/WhatsApp Image 2024-05-29 at 10.50.27_ce497ecf.jpg" alt="Your Photo" class="profile-photo">
+                <h1 class="profile-name">Mamadou Bachir Diallo</h1>
+                <p class="profile-role">Web Designer & Sociologist</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>  I am a web designer with a background in Sociology, skilled in creating intuitive
+                 and visually appealing websites while understanding the social dynamics and user 
+                 behaviors that influence digital intercations.
+                 My dual expertise allows me to design user-centered web experiences informed by 
+                 deep Sociological insights into human behavior and social trends.   
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Sociological Research</li>
+                <li>Microsoft Office</li>
+                <li>Customer Service</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="img/catholic charities.png" alt="Project 1">
+                <h3>catholic Charities Boston</h3>
+                <p>This is a repliacte of cathoclic charities Boston's website .</p>
+            </div>
+            <div class="project">
+                <img src="img/CNET.png" alt="Project 2">
+                <h3>CNET</h3>
+                <p>This is a repliacte of CNET's website.</p>
+            </div>
+            <div class="project">
+                <img src="img/CNN.png" alt="Project 3">
+                <h3>CNN</h3>
+                <p>This is a repliacte of CNN's website.</p>
+            </div>
+            <div class="project">
+                <img src="img/Forbes.png" alt="Project 4">
+                <h3>Forbes</h3>
+                <p>This is a repliacte of Forbes's website.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2>My Resume</h2>
+            <a href="/resume/Mamadou Bachir DIALLO - Resume Friday Class  (1).pdf" target="_blank" class="btn">Download Resume</a>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" onsubmit="sendMail(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+            <div class="social-media">
+                <a href="https://m.facebook.com/beejay.diallo.902?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/bachirdiallo8" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/mamadou-bachir-diallo-0b12b01b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Mamadou Bachir Diallo. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
