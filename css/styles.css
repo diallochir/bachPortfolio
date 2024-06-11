@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: url('../img/bk.jpg');
+    background-image: url('../img/bk.jpg');
 }
 
 .header {
-    background: url('/img/laptop-with-PSD-file.jpeg') no-repeat center center/cover;
+    background: url('../img/laptop-with-PSD-file.jpeg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -85,13 +85,13 @@ body {
 }
 
 .project img {
-    width: 70%;
+    max-width: 80%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-.resume .btn {
+.resume .btn, .contact button {
     display: inline-block;
     padding: 10px 20px;
     border: none;
@@ -103,7 +103,7 @@ body {
     cursor: pointer;
 }
 
-.resume .btn:hover {
+.resume .btn:hover, .contact button:hover {
     background-color: #555;
 }
 
@@ -182,5 +182,9 @@ form button:hover {
 
     .nav ul {
         flex-direction: column;
+    }
+
+    .project img {
+        width: 100%;
     }
 }

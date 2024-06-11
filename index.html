@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bachir Portfolio</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   
-    <script src="/js/scripts.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="profile">
-                <img src="/img/WhatsApp Image 2024-05-29 at 10.50.27_ce497ecf.jpg" alt="Your Photo" class="profile-photo">
+                <img src="img/WhatsApp Image 2024-05-29 at 10.50.27_ce497ecf.jpg" alt="Your Photo" class="profile-photo">
                 <h1 class="profile-name">Mamadou Bachir Diallo</h1>
                 <p class="profile-role">Web Designer & Sociologist</p>
             </div>
@@ -91,24 +91,46 @@
     </section>
 
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contact-form" onsubmit="sendMail(event)">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Send</button>
-            </form>
+
+     <section id="contact" class="contact">
+        <h1 id="form">Contact Me</h1>
+        <form id="contact" action="#">
+        
+            <p class="form-tittle">Submit The Form Below Or Write Me An Email </p><br>
+            <p id="formErr"></p><p id="formOK"></p>
+            <section>
+                <label for="name"> Name</label><br>
+             </section>
+
+            <section>
+                <div class="container">
+                <input type="text" id="idName" placeholder="" size="64"><br><br>
+                
+                    <section>
+                        <label for="email">Email</label><br>
+                    </section>
+
+                    <section>
+                        <input type="text" id="idEmail" name="email" size="64"><br><br>
+                    </section>
+
+                     <section>
+                        <label for="message">Message </label><br>
+                    </section>
+
+                    <section>
+                        <input type="text" id="idMessage" >
+                    </section>
+
+                    </div>
+                    <br>
+                    
+                    <button  id="sendEmailButton" value="button">Submit</button>
+
+        </form>
+            </fieldset>
+            </section>
+
             <div class="social-media">
                 <a href="https://m.facebook.com/beejay.diallo.902?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://x.com/bachirdiallo8" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -123,6 +145,7 @@
             <p>© 2024 Mamadou Bachir Diallo. All rights reserved.</p>
         </div>
     </footer>
-
+<script src="js/scripts.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
